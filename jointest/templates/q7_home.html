@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/css/ol.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    
+    <style>
+      .map {
+        height: 600px;
+        width: 100%;
+      }
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.9.0/build/ol.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <title>Questão 7: OpenLayers</title>
+</head>
+
+<body>
+    <div id="map" class="map"></div>
+
+    {% include 'q7_new_alvo_modal.html' with alvo_form=alvo_form %}
+    {% include 'q7_update_alvo_modal.html' with alvo_form=alvo_form %}
+    
+
+    <button type='button' id="modal_individual" class='btn btn-primary graph_modal' data-toggle='modal' data-target='#createModal'>
+      Incluir Novo Alvo
+    </button>
+
+    <button type='button' id="modal_individual" class='btn btn-primary' data-toggle='modal' data-target='#updateModal'>
+      Update Modal
+    </button>
+
+    <script type="text/javascript" src="{% static 'q7_script.js' %}"></script>
+</body>

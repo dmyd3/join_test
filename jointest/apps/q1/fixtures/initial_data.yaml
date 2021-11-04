@@ -1,0 +1,61 @@
+- model: q1.Cargo
+  pk: 1
+  fields:
+    nome_cargo: Gerente de Projetos
+
+- model: q1.Cargo
+  pk: 2
+  fields:
+    nome_cargo: Tecnologia da Informação
+
+- model: q1.Cargo
+  pk: 3
+  fields:
+    nome_cargo: Serviços Gerais
+
+- model: q1.Cargo
+  pk: 4
+  fields:
+    nome_cargo: Departamento Pessoal
+
+- model: q1.Pessoa
+  pk: 1
+  fields:
+    nome: Antonio Carlos
+    id_cargo: 1
+    admissao: '1999-05-10'
+
+- model: q1.Pessoa
+  pk: 2
+  fields:
+    nome: Marcos Paulo
+    id_cargo: 2
+    admissao: '1998-04-05'
+
+- model: q1.Pessoa
+  pk: 3
+  fields:
+    nome: Samanta Oliveira
+    id_cargo: 2
+    admissao: '2005-06-20'
+
+- model: q1.Pessoa
+  pk: 4
+  fields:
+    nome: Beatriz Pires
+    id_cargo: 1
+    admissao: '2003-12-10'
+
+- model: q1.Pessoa
+  pk: 5
+  fields:
+    nome: José dos Santos
+    id_cargo: 3
+    admissao: '1999-01-17'
+
+- model: q1.Pessoa
+  pk: 6
+  fields:
+    nome: Maria das Graças
+    id_cargo: 1
+    admissao: '2007-06-07'
